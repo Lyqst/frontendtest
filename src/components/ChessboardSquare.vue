@@ -63,7 +63,6 @@ export default {
 }
 .selected, .selected:hover {
   background-color: var(--selected-square);
-  cursor: initial;
 }
 .file-indicator,
 .rank-indicator {
