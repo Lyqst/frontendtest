@@ -112,10 +112,11 @@ export default {
   cursor: pointer;
   height: 2.2rem;
 }
-.footer button:hover,
-.footer button:focus-visible {
-  background-color: var(--sidebar-bg-color);
-  color: var(--foreground-color);
+@media (hover: hover) {
+  .footer button:hover {
+    background-color: var(--sidebar-bg-color);
+    color: var(--foreground-color);
+  }
 }
 .footer span {
   flex-grow: 1;

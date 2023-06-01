@@ -32,9 +32,11 @@ export default {
   background-color: var(--foreground-color);
   cursor: pointer;
 }
-.switch:hover {
-  background-color: var(--sidebar-bg-color);
-  color: var(--foreground-color);
+@media (hover: hover) {
+  .switch:hover {
+    background-color: var(--sidebar-bg-color);
+    color: var(--foreground-color);
+  }
 }
 .switch > * {
   z-index: 2;
