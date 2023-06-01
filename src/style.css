@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@700&display=swap");
+
+:root {
+  --light-color: hsl(179, 13%, 85%);
+  --dark-color: hsl(189, 11%, 22%);
+
+  --selected-square: hsl(299, 55%, 50%);
+  --hover-color: hsl(179, 45%, 45%);
+
+  --chessboard-size: clamp(10rem, 85dvmin, 75rem);
+  --chessboard-padding: calc((100dvmin - var(--chessboard-size)) / 2);
+
+  --fs-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --fs-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --fs-lg: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+}
+
+:root.light-theme {
+  --background-color: var(--light-color);
+  --foreground-color: var(--dark-color);
+
+  --site-bg-color: hsl(179, 6%, 86%);
+  --sidebar-bg-color: hsl(189, 6%, 91%);
+}
+:root.dark-theme {
+  --background-color: var(--dark-color);
+  --foreground-color: var(--light-color);
+
+  --site-bg-color: hsl(179, 6%, 6%);
+  --sidebar-bg-color: hsl(189, 6%, 32%); 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Geologica', sans-serif;
+  font-size: var(--fs-base);
+  color: var(--foreground-color);
+  background-color: var(--site-bg-color);
+}
+
+::selection {
+  background-color: var(--hover-color);
+}
