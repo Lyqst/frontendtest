@@ -1,7 +1,7 @@
 <template>
   <div class="switch" :class="{ dark: isDark }" @click="switchTheme">
-    <v-icon name="hi-solid-sun" scale="1.1"></v-icon>
-    <v-icon name="hi-solid-moon" scale="1.1"></v-icon>
+    <v-icon name="hi-solid-sun"></v-icon>
+    <v-icon name="hi-solid-moon"></v-icon>
   </div>
 </template>
 
@@ -26,9 +26,9 @@ export default {
   display: flex;
   place-content: space-between;
   place-items: center;
-  padding-inline: 0.4rem;
+  padding-inline: 0.5rem;
   height: 2.2rem;
-  width: 3.5rem;
+  width: 3.3rem;
   background-color: var(--foreground-color);
   cursor: pointer;
 }
@@ -58,12 +58,12 @@ export default {
   position: absolute;
   left: 0.2rem;
   z-index: 0;
-  height: 1.7rem;
-  width: 1.7rem;
+  height: 1.75rem;
+  width: 1.75rem;
   background-color: var(--background-color);
   transition: transform 150ms ease;
 }
 .switch.dark::before {
-  transform: translateX(2.25rem);
+  transform: translateX(2.1rem);
 }
 </style>
